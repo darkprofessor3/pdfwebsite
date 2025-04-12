@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHK Books PDF</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .top {
+            background-color: rgb(3, 49, 35);
+        }
+        
+        .heading {
+            background-color: rgb(3, 49, 35);
+            padding: 12px 0;
+        }
+        
+        .title {
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            line-height: 1.2;
+        }
+        
+        .nav-wrapper {
+            background-color: rgb(23, 90, 68);
+        }
+        
+        .nav {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        /* Ensure all li items take the same width and cover 70% of the navbar */
+        
+        .nav li {
+            list-style: none;
+            padding: 14px 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            background-color: rgb(23, 90, 68);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            /* white-space: nowrap; */
+            overflow: hidden;
+            /* Hide overflow text */
+            /* Add ellipsis for long text */
+            /* white-space: nowrap; */
+            flex: 0;
+            flex-basis: 6%;
+            /* Makes all li items the same size */
+            text-align: center;
+            flex-grow: 0;
+            /* Prevent growing */
+            flex-shrink: 0;
+            /* Prevent shrinking */
+        }
+        /* Ensure 30% space after the last li item */
+        
+        .nav::after {
+            content: "";
+            flex: 0 0 30%;
+        }
+        /* Responsive adjustments */
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1rem;
+            }
+            .nav li {
+                padding: 10px 6px;
+                font-size: 10%;
+                flex-shrink: 0;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 675px) {
+            .title {
+                font-size: 1.2rem;
+            }
+            .nav li {
+                padding: 8px 5px;
+                font-size: 10%;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
+        
+        @media (max-width: 560px) {
+            .title {
+                font-size: 1.0rem;
+            }
+            .nav li {
+                padding: 6px 4px;
+                font-size: 0.7rem;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
+        
+        @media (max-width: 510px) {
+            .title {
+                font-size: 1.0rem;
+            }
+            .nav li {
+                padding: 4px 2px;
+                font-size: 0.7rem;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .title {
+                font-size: 50%;
+            }
+            .nav li {
+                padding: 4px 2px;
+                font-size: 3px%;
+                flex-grow: 0;
+                flex-shrink: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <header class="heading">
+            <div class="title">AHK BOOKS PDF</div>
+        </header>
+
+        <div class="nav-wrapper">
+            <ul class="nav">
+                <li>LATEST</li>
+                <li>ALL</li>
+                <li>QURAN</li>
+                <li>HADEES</li>
+                <li>SEERAT</li>
+                <li>FIQH</li>
+                <li>TAFSEER</li>
+                <li>HISTORY</li>
+                <li>STORIES</li>
+                <li>OTHER</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
